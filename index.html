@@ -107,6 +107,7 @@
 /* ============================ RESET ============================ */
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
+html,body{overflow-x:clip}/* guard: no horizontal scroll on mobile (clip keeps sticky header working) */
 body{
   margin:0;
   font-family:var(--sans);
@@ -114,6 +115,7 @@ body{
   background:var(--paper);
   font-size:17px;
   line-height:1.6;
+  overflow-wrap:break-word;/* long tokens like the email address wrap instead of overflowing */
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
@@ -127,12 +129,12 @@ button{font-family:inherit;cursor:pointer}
 /* ============================ LAYOUT HELPERS ============================ */
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .section{padding:96px 0}
+/* Block (not inline-flex) so long labels wrap instead of forcing page width on mobile */
 .eyebrow{
-  font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--red);
-  display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;
+  font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--red);margin:0 0 18px;
 }
-.eyebrow::before{content:"";width:26px;height:2px;background:var(--red);display:inline-block}
+.eyebrow::before{content:"";display:inline-block;width:26px;height:2px;background:var(--red);vertical-align:middle;margin-right:10px}
 .section-head{max-width:680px;margin-bottom:54px}
 .section-head h2{font-size:clamp(30px,4.4vw,46px);font-weight:800}
 .section-head p{margin-top:18px;font-size:18px;color:var(--body)}
@@ -303,10 +305,11 @@ button{font-family:inherit;cursor:pointer}
 .contact h2{color:var(--white);font-size:clamp(30px,4.4vw,46px);font-weight:800}
 .contact-lead{color:var(--dk-body);margin-top:18px;font-size:18px;max-width:440px}
 .cinfo{margin-top:34px;display:grid;gap:4px}
-.cinfo a,.cinfo div{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid var(--line-dk)}
+.cinfo a,.cinfo div{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid var(--line-dk);min-width:0}
+.cinfo a>span,.cinfo div>span{min-width:0}/* let the text column shrink so the email can wrap */
 .cinfo .ci-ico{width:40px;height:40px;border-radius:10px;background:var(--char);border:1px solid var(--line-dk);display:grid;place-items:center;flex:none}
 .cinfo svg{width:19px;height:19px;color:var(--amber)}
-.cinfo b{font-family:var(--display);color:var(--white);font-size:16px;display:block;line-height:1.3}
+.cinfo b{font-family:var(--display);color:var(--white);font-size:16px;display:block;line-height:1.3;overflow-wrap:anywhere}
 .cinfo small{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--dk-muted);text-transform:uppercase;display:block;margin-bottom:3px}
 
 .form{background:var(--char);border:1px solid var(--line-dk);border-radius:18px;padding:32px}
@@ -341,6 +344,7 @@ button{font-family:inherit;cursor:pointer}
 /* ============================ RESPONSIVE ============================ */
 @media (max-width:980px){
   .hero .wrap{grid-template-columns:1fr;gap:10px;text-align:left}
+  .hero-copy,.hero-art{min-width:0}/* let grid items shrink below content size */
   .hero-art{order:-1;margin-bottom:8px}
   .hero-art img{max-width:320px}
   .hero-badge{position:static;margin-top:18px;display:inline-flex}
@@ -351,14 +355,30 @@ button{font-family:inherit;cursor:pointer}
   .nav{display:none}
 }
 @media (max-width:560px){
-  .section{padding:66px 0}
+  .wrap{padding:0 20px}
+  .section{padding:64px 0}
+  .section-head{margin-bottom:38px}
+  .eyebrow{letter-spacing:.14em;font-size:11.5px}
   .grid{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr}
-  .stats{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:6px}
+  .stats{grid-template-columns:1fr 1fr;gap:12px}
   .row2{grid-template-columns:1fr}
-  .header .wrap{gap:12px}
+  .header .wrap{gap:12px;height:64px}
+  .header .btn{padding:10px 14px}
   .header .btn span{display:none}
-  .footer-cols{gap:36px}
+  /* Stack hero actions full-width for easy thumb taps */
+  .hero .wrap{padding-bottom:64px}
+  .hero-cta{flex-direction:column;align-items:stretch;gap:12px}
+  .hero-cta .btn{width:100%;justify-content:center}
+  .hero-badge{width:100%}
+  .why-grid{gap:32px}
+  .form{padding:24px 20px}
+  .footer-top{gap:28px}
+  .footer-cols{gap:32px;flex-wrap:wrap}
+}
+@media (max-width:380px){
+  .stats{grid-template-columns:1fr}/* very narrow: one stat per row */
+  .brand b{font-size:15.5px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;scroll-behavior:auto!important;transition:none!important}
