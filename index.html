@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================= -->
+<!--  SEO / SOCIAL  —  PLACEHOLDER VALUES, replace before launch.  -->
+<!--  Search this file for "PLACEHOLDER" to find everything that   -->
+<!--  Felipe needs to swap in (phone, email, license #, domain).   -->
+<!-- ============================================================= -->
+<title>Chattanooga Electrical Solutions | Licensed Master Electrician in Chattanooga, TN</title>
+<meta name="description" content="Licensed, insured master electrician serving Chattanooga, TN and surrounding areas. Repairs, panel & service upgrades, whole-home inspections, troubleshooting, lighting, generators, and new construction for homes and businesses. Free estimates.">
+<meta name="keywords" content="electrician Chattanooga, master electrician, Chattanooga electrical, panel upgrade, electrical repair, generator installation, electrical inspection, Hixson electrician, East Ridge electrician, commercial electrician Chattanooga">
+<meta name="author" content="Chattanooga Electrical Solutions">
+<link rel="canonical" href="https://chattanoogaelectricalsolutions.com/"><!-- PLACEHOLDER domain -->
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chattanooga Electrical Solutions | Licensed Master Electrician">
+<meta property="og:description" content="Done right. Up to code. On time. Licensed master electrician serving the greater Chattanooga area for homes and businesses.">
+<meta property="og:image" content="assets/logo.jpg">
+<meta property="og:url" content="https://chattanoogaelectricalsolutions.com/"><!-- PLACEHOLDER domain -->
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon: lightning bolt, matches the brand mark -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111114'/%3E%3Cpath d='M18 4 8 18h6l-2 10 12-16h-7z' fill='%23F7A325'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/logo.jpg">
+
+<!-- Fonts: Archivo (display) / Hanken Grotesk (body) / JetBrains Mono (technical labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<!-- Structured data: helps Google show the business as a local service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Chattanooga Electrical Solutions",
+  "image": "https://chattanoogaelectricalsolutions.com/assets/logo.jpg",
+  "description": "Licensed, insured master electrician serving Chattanooga, TN and surrounding areas. Residential and commercial electrical repair, installation, inspections, panel upgrades, troubleshooting, lighting, generators, and new construction.",
+  "url": "https://chattanoogaelectricalsolutions.com/",
+  "telephone": "+1-423-779-6637",
+  "founder": "Felipe Rojas",
+  "priceRange": "$$",
+  "areaServed": [
+    "Chattanooga TN","Hixson TN","East Ridge TN","Red Bank TN","Ooltewah TN",
+    "Signal Mountain TN","Soddy-Daisy TN","Collegedale TN","East Brainerd TN",
+    "Ringgold GA","Fort Oglethorpe GA"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chattanooga",
+    "addressRegion": "TN",
+    "postalCode": "37402",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 35.0456, "longitude": -85.3097 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "27" },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electrical repair and installation" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Panel and service upgrades" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Whole-home electrical inspections" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electrical troubleshooting" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lighting installation" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Generator backup installation" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "New construction wiring" } }
+  ]
+}
+</script>
+
+<style>
+/* ============================ TOKENS ============================ */
+:root{
+  /* Color — drawn straight from the logo: black field, red bolts, amber shirt-bolt */
+  --ink:      #111114;   /* hero / dark sections */
+  --ink-2:    #18181d;   /* raised dark surface */
+  --char:     #1f1f26;   /* dark cards */
+  --line-dk:  #2c2c35;   /* hairlines on dark */
+  --red:      #e11d1d;   /* electric red (lightning) */
+  --red-2:    #ff3b3b;   /* hover / glow red */
+  --amber:    #f7a325;   /* primary action / accent */
+  --amber-2:  #ffb84d;
+  --paper:    #f4f5f8;   /* light body background (cool, not cream) */
+  --white:    #ffffff;
+  --slate:    #15151a;   /* headings on light */
+  --body:     #4c4d57;   /* body text on light */
+  --muted:    #8a8b96;   /* captions */
+  --dk-body:  #b9bac4;   /* body text on dark */
+  --dk-muted: #7e7f8c;
+
+  --shadow:   0 18px 50px -20px rgba(0,0,0,.30);
+  --shadow-card: 0 1px 0 rgba(20,20,30,.04), 0 12px 30px -18px rgba(20,20,30,.25);
+  --radius:   14px;
+  --maxw:     1180px;
+
+  --display: "Archivo", system-ui, sans-serif;
+  --sans:    "Hanken Grotesk", system-ui, sans-serif;
+  --mono:    "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* ============================ RESET ============================ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--sans);
+  color:var(--body);
+  background:var(--paper);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);color:var(--slate);margin:0;line-height:1.04;letter-spacing:-.02em}
+p{margin:0}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+/* ============================ LAYOUT HELPERS ============================ */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.section{padding:96px 0}
+.eyebrow{
+  font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--red);
+  display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--red);display:inline-block}
+.section-head{max-width:680px;margin-bottom:54px}
+.section-head h2{font-size:clamp(30px,4.4vw,46px);font-weight:800}
+.section-head p{margin-top:18px;font-size:18px;color:var(--body)}
+
+/* ============================ BUTTONS ============================ */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.01em;
+  padding:15px 26px;border-radius:10px;border:2px solid transparent;
+  transition:transform .12s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+  white-space:nowrap;
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-amber{background:var(--amber);color:#1a1205;box-shadow:0 10px 24px -10px rgba(247,163,37,.7)}
+.btn-amber:hover{background:var(--amber-2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--white);border-color:var(--line-dk)}
+.btn-ghost:hover{border-color:var(--amber);color:var(--amber);transform:translateY(-2px)}
+.btn-dark{background:var(--slate);color:var(--white)}
+.btn-dark:hover{background:#000;transform:translateY(-2px)}
+
+/* ============================ SIGNATURE: live current line ============================ */
+/* A wire with a glowing pulse running through it — the through-line of the page. */
+.current{position:relative;height:2px;background:var(--line-dk);overflow:hidden}
+.current::after{
+  content:"";position:absolute;top:0;left:0;height:100%;width:160px;
+  background:linear-gradient(90deg,transparent,var(--amber) 45%,#fff 50%,var(--amber) 55%,transparent);
+  filter:drop-shadow(0 0 6px var(--amber));
+  animation:surge 4.2s linear infinite;
+}
+@keyframes surge{from{transform:translateX(-160px)}to{transform:translateX(calc(100vw + 160px))}}
+
+/* ============================ HEADER ============================ */
+.header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(17,17,20,.86);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line-dk);
+}
+.header .wrap{display:flex;align-items:center;gap:24px;height:74px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--white)}
+.brand .mark{
+  width:38px;height:38px;border-radius:9px;background:#000;display:grid;place-items:center;
+  border:1px solid var(--line-dk);flex:none;
+}
+.brand .mark svg{width:22px;height:22px}
+.brand b{font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:-.01em;line-height:1}
+.brand span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--dk-muted);margin-top:3px;text-transform:uppercase}
+.nav{display:flex;gap:28px;margin-left:auto}
+.nav a{color:var(--dk-body);font-size:14.5px;font-weight:600;transition:color .15s}
+.nav a:hover{color:var(--white)}
+.header .btn{margin-left:auto;padding:11px 18px;font-size:14px}
+.nav + .btn{margin-left:0}
+.menu-btn{display:none}
+
+/* ============================ HERO ============================ */
+.hero{position:relative;background:var(--ink);color:var(--white);overflow:hidden;isolation:isolate}
+.hero::before{ /* echo of the logo's red/amber radial behind the mascot */
+  content:"";position:absolute;z-index:-1;top:-10%;right:-6%;width:760px;height:760px;
+  background:radial-gradient(circle at center,rgba(225,29,29,.30),rgba(247,163,37,.12) 38%,transparent 62%);
+  filter:blur(6px);pointer-events:none;
+}
+.hero::after{ /* faint circuit grid texture */
+  content:"";position:absolute;inset:0;z-index:-1;opacity:.4;pointer-events:none;
+  background-image:linear-gradient(var(--line-dk) 1px,transparent 1px),linear-gradient(90deg,var(--line-dk) 1px,transparent 1px);
+  background-size:48px 48px;
+  -webkit-mask-image:radial-gradient(circle at 70% 35%,#000,transparent 70%);
+          mask-image:radial-gradient(circle at 70% 35%,#000,transparent 70%);
+}
+.hero .wrap{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;
+  padding-top:74px;padding-bottom:84px;
+}
+.hero h1{
+  color:var(--white);font-weight:900;font-size:clamp(44px,7vw,82px);
+  letter-spacing:-.035em;line-height:.96;text-transform:uppercase;
+}
+.hero h1 .b{color:var(--amber)}
+.hero h1 .r{color:var(--red-2)}
+.hero-lead{margin-top:24px;max-width:520px;font-size:19px;color:var(--dk-body)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:38px;padding-top:30px;border-top:1px solid var(--line-dk)}
+.trust span{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--dk-body)}
+.trust svg{width:16px;height:16px;color:var(--amber);flex:none}
+
+/* Mascot: black JPG background drops out via screen blend against the dark hero */
+.hero-art{position:relative;display:grid;place-items:center}
+/* Constrain width only; height:auto keeps the intrinsic ratio so the disc stays round */
+.hero-art img{mix-blend-mode:screen;filter:drop-shadow(0 30px 50px rgba(0,0,0,.6));width:100%;max-width:560px;height:auto}
+.hero-badge{
+  position:absolute;bottom:6px;left:0;display:flex;align-items:center;gap:10px;
+  background:var(--char);border:1px solid var(--line-dk);border-radius:12px;
+  padding:12px 16px;box-shadow:var(--shadow);
+}
+.hero-badge b{font-family:var(--display);color:var(--white);font-size:15px;display:block;line-height:1.15}
+.hero-badge small{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--amber);text-transform:uppercase}
+.hero-badge .dot{width:9px;height:9px;border-radius:50%;background:#39d353;box-shadow:0 0 0 4px rgba(57,211,83,.18);flex:none}
+
+/* ============================ SERVICES ============================ */
+.services{background:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{
+  background:var(--white);border:1px solid #e7e8ee;border-radius:var(--radius);
+  padding:26px 24px 28px;box-shadow:var(--shadow-card);
+  transition:transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.card:hover{transform:translateY(-4px);border-color:#d7d3c9;box-shadow:0 22px 44px -22px rgba(20,20,30,.35)}
+.card .ico{
+  width:46px;height:46px;border-radius:11px;display:grid;place-items:center;margin-bottom:18px;
+  background:linear-gradient(145deg,#fff3e0,#ffe2c2);border:1px solid #ffd9a8;
+}
+.card .ico svg{width:24px;height:24px;color:var(--red)}
+.card h3{font-size:18.5px;font-weight:700;margin-bottom:9px}
+.card p{font-size:14.5px;line-height:1.55;color:var(--body)}
+
+/* ============================ CREDENTIALS / STATS ============================ */
+.why{background:var(--ink);color:var(--white)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.why h2{color:var(--white);font-size:clamp(30px,4.2vw,44px);font-weight:800}
+.why .eyebrow{color:var(--amber)}
+.why .eyebrow::before{background:var(--amber)}
+.why p{color:var(--dk-body);margin-top:18px;font-size:17px}
+.sig{margin-top:24px;font-family:var(--display);font-weight:700;color:var(--white)}
+.sig small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.15em;color:var(--amber);text-transform:uppercase;margin-top:4px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:var(--char);border:1px solid var(--line-dk);border-radius:var(--radius);padding:26px 24px}
+.stat b{font-family:var(--display);font-size:clamp(34px,5vw,48px);font-weight:900;color:var(--amber);display:block;line-height:1;letter-spacing:-.03em}
+.stat span{display:block;margin-top:10px;font-size:13.5px;color:var(--dk-body);font-weight:600}
+
+/* ============================ PROCESS ============================ */
+.process{background:var(--paper)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step}
+.step{position:relative;padding-top:30px}
+.step::before{
+  counter-increment:step;content:"0" counter(step);
+  font-family:var(--mono);font-weight:700;font-size:13px;color:var(--red);letter-spacing:.1em;
+}
+.step .bar{height:3px;background:linear-gradient(90deg,var(--red),var(--amber));border-radius:3px;margin:14px 0 18px;width:46px}
+.step h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.step p{font-size:14.5px;color:var(--body)}
+
+/* ============================ TESTIMONIALS ============================ */
+.reviews{background:var(--ink-2);color:var(--white)}
+.reviews .eyebrow{color:var(--amber)}
+.reviews .eyebrow::before{background:var(--amber)}
+.reviews h2{color:var(--white);font-size:clamp(30px,4.2vw,44px);font-weight:800}
+.r-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.quote{background:var(--char);border:1px solid var(--line-dk);border-radius:var(--radius);padding:28px 26px;display:flex;flex-direction:column}
+.stars{color:var(--amber);letter-spacing:3px;font-size:15px;margin-bottom:16px}
+.quote p{color:#e7e8ee;font-size:15.5px;line-height:1.6}
+.quote .who{margin-top:22px;padding-top:18px;border-top:1px solid var(--line-dk);font-size:14px}
+.quote .who b{font-family:var(--display);color:var(--white);display:block}
+.quote .who span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--dk-muted)}
+
+/* ============================ AREAS ============================ */
+.areas{background:var(--paper)}
+.areas-inner{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid #e1e2ea;
+  border-radius:999px;padding:9px 16px;font-size:14px;font-weight:600;color:var(--slate);
+}
+.chip svg{width:13px;height:13px;color:var(--amber)}
+
+/* ============================ CONTACT ============================ */
+.contact{background:var(--ink);color:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px}
+.contact .eyebrow{color:var(--amber)}
+.contact .eyebrow::before{background:var(--amber)}
+.contact h2{color:var(--white);font-size:clamp(30px,4.4vw,46px);font-weight:800}
+.contact-lead{color:var(--dk-body);margin-top:18px;font-size:18px;max-width:440px}
+.cinfo{margin-top:34px;display:grid;gap:4px}
+.cinfo a,.cinfo div{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid var(--line-dk)}
+.cinfo .ci-ico{width:40px;height:40px;border-radius:10px;background:var(--char);border:1px solid var(--line-dk);display:grid;place-items:center;flex:none}
+.cinfo svg{width:19px;height:19px;color:var(--amber)}
+.cinfo b{font-family:var(--display);color:var(--white);font-size:16px;display:block;line-height:1.3}
+.cinfo small{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--dk-muted);text-transform:uppercase;display:block;margin-bottom:3px}
+
+.form{background:var(--char);border:1px solid var(--line-dk);border-radius:18px;padding:32px}
+.form h3{color:var(--white);font-size:22px;font-weight:800;margin-bottom:6px}
+.form .sub{color:var(--dk-muted);font-size:13.5px;margin-bottom:22px}
+.field{margin-bottom:16px}
+.field label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dk-body);margin-bottom:7px}
+.field input,.field select,.field textarea{
+  width:100%;background:var(--ink);border:1px solid var(--line-dk);border-radius:10px;
+  padding:13px 14px;color:var(--white);font-family:var(--sans);font-size:15px;transition:border-color .15s;
+}
+.field input::placeholder,.field textarea::placeholder{color:#5b5c69}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--amber)}
+.field textarea{resize:vertical;min-height:104px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form .btn-amber{width:100%;justify-content:center;margin-top:6px}
+.form-note{font-size:12px;color:var(--dk-muted);text-align:center;margin-top:14px}
+
+/* ============================ FOOTER ============================ */
+.footer{background:#0b0b0e;color:var(--dk-muted);padding:54px 0 30px}
+.footer-top{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start;padding-bottom:34px;border-bottom:1px solid var(--line-dk)}
+.footer .brand b{color:var(--white)}
+.footer .brand{margin-bottom:14px}
+.footer-blurb{max-width:340px;font-size:14px;line-height:1.6}
+.footer-cols{display:flex;gap:60px}
+.footer-cols h4{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dk-body);margin-bottom:16px;font-weight:700}
+.footer-cols a,.footer-cols p{display:block;color:var(--dk-muted);font-size:14px;margin-bottom:10px;transition:color .15s}
+.footer-cols a:hover{color:var(--amber)}
+.footer-bot{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;padding-top:24px;font-size:12.5px}
+.footer-bot .lic{font-family:var(--mono);letter-spacing:.06em}
+
+/* ============================ RESPONSIVE ============================ */
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr;gap:10px;text-align:left}
+  .hero-art{order:-1;margin-bottom:8px}
+  .hero-art img{max-width:320px}
+  .hero-badge{position:static;margin-top:18px;display:inline-flex}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid,.contact-grid,.areas-inner{grid-template-columns:1fr;gap:40px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .r-grid{grid-template-columns:1fr}
+  .nav{display:none}
+}
+@media (max-width:560px){
+  .section{padding:66px 0}
+  .grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr}
+  .header .wrap{gap:12px}
+  .header .btn span{display:none}
+  .footer-cols{gap:36px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================ HEADER ============================ -->
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Chattanooga Electrical Solutions home">
+      <span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M18 4 8 18h6l-2 10 12-16h-7z" fill="#F7A325"/></svg></span>
+      <span><b>Chattanooga Electrical</b><span>Solutions &middot; Licensed</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <!-- Felipe's phone -->
+    <a class="btn btn-amber" href="tel:+14237796637">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>(423)&nbsp;779-6637</span>
+    </a>
+  </div>
+</header>
+
+<!-- ============================ HERO ============================ -->
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Licensed Master Electrician &middot; Chattanooga, TN</p>
+      <h1>Done&nbsp;right.<br><span class="r">Up to code.</span><br><span class="b">On&nbsp;time.</span></h1>
+      <p class="hero-lead">Chattanooga Electrical Solutions handles everything from a flickering outlet to a full panel upgrade &mdash; for homes and businesses across the greater Chattanooga area. Licensed, insured, and straight with you on pricing.</p>
+      <div class="hero-cta">
+        <a class="btn btn-amber" href="#contact">Get a free quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <!-- Felipe's phone -->
+        <a class="btn btn-ghost" href="tel:+14237796637">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (423) 779-6637
+        </a>
+      </div>
+      <div class="trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Licensed &amp; Insured</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Master Electrician</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free Estimates</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Upfront Pricing</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="assets/logo.jpg" alt="Chattanooga Electrical Solutions logo: Felipe Rojas giving a thumbs up with lightning bolts" width="1533" height="1082">
+      <div class="hero-badge">
+        <span class="dot" aria-hidden="true"></span>
+        <span><b>24/7 Emergency Service</b><small>Power out? Call anytime</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="current" aria-hidden="true"></div>
+
+<!-- ============================ SERVICES ============================ -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What we do</p>
+      <h2>One licensed electrician for the whole job.</h2>
+      <p>Residential and commercial &mdash; repairs, upgrades, inspections, and new work, all handled to code and done clean.</p>
+    </div>
+    <div class="grid">
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7h5l-3 4h3l-9 11 2-8H8l3-7z"/></svg></div>
+        <h3>Repairs &amp; Installation</h3>
+        <p>Fixtures, outlets, switches, and wiring &mdash; installed clean and repaired to last.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div>
+        <h3>Panel &amp; Service Upgrades</h3>
+        <p>Outdated or overloaded panel? Upgrade to safe, modern capacity for today&rsquo;s loads.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h3>Whole-Home Inspections</h3>
+        <p>A top-to-bottom check of your electrical system, with a clear report and honest priorities.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg></div>
+        <h3>Electrical Troubleshooting</h3>
+        <p>Tripping breakers, dead outlets, mystery flickers &mdash; diagnosed at the source.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></div>
+        <h3>Lighting</h3>
+        <p>Recessed, under-cabinet, landscape, and fixture work that puts light exactly where you want it.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M11 11l-2 3h4l-2 3"/></svg></div>
+        <h3>Generator Backups</h3>
+        <p>Standby and portable generator setups that keep the essentials running when the grid doesn&rsquo;t.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M10 21v-5h4v5"/></svg></div>
+        <h3>New Construction</h3>
+        <p>Full electrical for new builds and additions, wired right from the rough-in up.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V7l6-4 6 4M15 21V11l6 4v6M3 21h18M7 11h.01M7 15h.01"/></svg></div>
+        <h3>Commercial &amp; Residential</h3>
+        <p>Homes, offices, retail, and light commercial &mdash; one licensed electrician for all of it.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ WHY / CREDENTIALS ============================ -->
+<section class="section why" id="why">
+  <div class="wrap why-grid">
+    <div>
+      <p class="eyebrow">Why Chattanooga Electrical</p>
+      <h2>When you call, you get the master &mdash; not a call center.</h2>
+      <p>Hi, I&rsquo;m Felipe Rojas. After years wiring everything from custom homes to commercial build-outs, I started Chattanooga Electrical Solutions to do electrical work the way it should be done: licensed, careful, and honest about what you actually need.</p>
+      <p>No upsells, no surprises &mdash; just clean, code-compliant work and a straight answer on price before I start. I treat your home or business like it&rsquo;s my own.</p>
+      <p class="sig">Felipe Rojas<small>Owner &middot; Master Electrician</small></p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>15+</b><span>Years in the trade</span></div>
+      <div class="stat"><b>500+</b><span>Jobs completed</span></div>
+      <div class="stat"><b>5.0&#9733;</b><span>Average customer rating</span></div>
+      <div class="stat"><b>24/7</b><span>Emergency response</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROCESS ============================ -->
+<section class="section process">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Simple, start to finish.</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="bar"></div><h3>Reach out</h3><p>Call or request a quote. Tell me what&rsquo;s going on and I&rsquo;ll book a visit that fits your schedule.</p></div>
+      <div class="step"><div class="bar"></div><h3>On-site assessment</h3><p>I diagnose the real issue and give you a clear, upfront price before any work starts.</p></div>
+      <div class="step"><div class="bar"></div><h3>Work done right</h3><p>Code-compliant, clean, and fully tested &mdash; with no shortcuts and no surprises.</p></div>
+      <div class="step"><div class="bar"></div><h3>Final walkthrough</h3><p>We go over everything together, and I stand behind every job I do.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="current" aria-hidden="true"></div>
+
+<!-- ============================ TESTIMONIALS ============================ -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What customers say</p>
+      <h2>Trusted across the Scenic City.</h2>
+    </div>
+    <div class="r-grid">
+      <figure class="quote">
+        <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Felipe upgraded our panel and rewired half the kitchen in a day. Showed up on time, explained everything, cleaned up after. Couldn&rsquo;t ask for more.&rdquo;</p>
+        <figcaption class="who"><b>Sarah M.</b><span>North Chattanooga</span></figcaption>
+      </figure>
+      <figure class="quote">
+        <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Had breakers tripping for months. Two other guys couldn&rsquo;t find it &mdash; Felipe tracked it down in an hour. Fair price, real professional.&rdquo;</p>
+        <figcaption class="who"><b>David R.</b><span>Hixson</span></figcaption>
+      </figure>
+      <figure class="quote">
+        <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;We use Chattanooga Electrical for all our store&rsquo;s electrical now. Reliable, licensed, and he actually picks up the phone.&rdquo;</p>
+        <figcaption class="who"><b>Megan T.</b><span>East Ridge</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICE AREAS ============================ -->
+<section class="section areas" id="areas">
+  <div class="wrap areas-inner">
+    <div class="section-head" style="margin-bottom:0">
+      <p class="eyebrow">Service area</p>
+      <h2>Serving greater Chattanooga.</h2>
+      <p>Based in Chattanooga and covering the surrounding Tennessee and North Georgia communities. Not sure if you&rsquo;re in range? Just ask.</p>
+    </div>
+    <div class="chips">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>Chattanooga</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>Hixson</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>East Ridge</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>Red Bank</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>Ooltewah</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>Signal Mountain</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>Soddy-Daisy</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>Collegedale</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>East Brainerd</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>Ringgold, GA</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>Fort Oglethorpe, GA</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Get in touch</p>
+      <h2>Let&rsquo;s get it powered up.</h2>
+      <p class="contact-lead">Tell me about the job and I&rsquo;ll get back to you with a free, no-pressure estimate &mdash; usually the same day.</p>
+      <div class="cinfo">
+        <!-- Felipe's phone -->
+        <a href="tel:+14237796637">
+          <span class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <span><small>Call or text</small><b>(423) 779-6637</b></span>
+        </a>
+        <!-- PLACEHOLDER email -->
+        <a href="mailto:felipe@chattanoogaelectricalsolutions.com">
+          <span class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+          <span><small>Email</small><b>felipe@chattanoogaelectricalsolutions.com</b></span>
+        </a>
+        <div>
+          <span class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <span><small>Hours</small><b>Mon&ndash;Fri 7a&ndash;6p &middot; Sat 9a&ndash;2p<br>24/7 emergency service</b></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formspree-ready: replace YOUR_FORM_ID with Felipe's free formspree.io endpoint -->
+    <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <h3>Request a free quote</h3>
+      <p class="sub">Fill this out and I&rsquo;ll be in touch shortly.</p>
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="(423) 000-0000" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@email.com">
+        </div>
+      </div>
+      <div class="field">
+        <label for="service">What do you need?</label>
+        <select id="service" name="service">
+          <option>Electrical repair or installation</option>
+          <option>Panel or service upgrade</option>
+          <option>Whole-home inspection</option>
+          <option>Troubleshooting</option>
+          <option>Lighting</option>
+          <option>Generator backup</option>
+          <option>New construction</option>
+          <option>Emergency / something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Tell me about the job</label>
+        <textarea id="message" name="message" placeholder="Describe what's going on, the property type, and your address or area."></textarea>
+      </div>
+      <button class="btn btn-amber" type="submit">Send request
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <p class="form-note">Prefer to talk? Call or text (423) 779-6637 anytime.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#top">
+          <span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M18 4 8 18h6l-2 10 12-16h-7z" fill="#F7A325"/></svg></span>
+          <span><b>Chattanooga Electrical</b><span>Solutions</span></span>
+        </a>
+        <p class="footer-blurb">Licensed, insured master electrician serving homes and businesses across the greater Chattanooga area. Done right, up to code, on time.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Services</h4>
+          <a href="#services">Repairs &amp; installation</a>
+          <a href="#services">Panel upgrades</a>
+          <a href="#services">Inspections</a>
+          <a href="#services">Generators</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#why">About Felipe</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#areas">Service area</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <!-- phone (real) / email still placeholder -->
+          <a href="tel:+14237796637">(423) 779-6637</a>
+          <a href="mailto:felipe@chattanoogaelectricalsolutions.com">Email us</a>
+          <p>Mon&ndash;Fri 7a&ndash;6p</p>
+          <p>24/7 emergency</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>&copy; 2026 Chattanooga Electrical Solutions. All rights reserved.</span>
+      <!-- PLACEHOLDER license number -->
+      <span class="lic">TN Master Electrician &middot; Lic. #E-00000000 &middot; Licensed &amp; Insured</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
