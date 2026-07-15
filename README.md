@@ -1,6 +1,6 @@
 # Chattanooga Electrical Solutions — landing page
 
-Static, single-file marketing site for Felipe Rojas, Master Electrician.
+Static, single-file marketing site for Felipe Rojas, Electrician.
 No build step, no dependencies. Served as a static site (GitHub Pages).
 
 ## Files
