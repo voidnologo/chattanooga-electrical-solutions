@@ -606,6 +606,10 @@ button{font-family:inherit;cursor:pointer}
 
     <!-- Formspree endpoint for quote-request submissions -->
     <form class="form" action="https://formspree.io/f/mvzegdwz" method="POST">
+      <!-- Subject line for the notification email Formspree sends to Felipe -->
+      <input type="hidden" name="_subject" value="New quote request &ndash; chattelectric.com">
+      <!-- Honeypot: hidden from people, bots fill it in; Formspree silently drops those submissions -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
       <h3>Request a free quote</h3>
       <p class="sub">Fill this out and I&rsquo;ll be in touch shortly.</p>
       <div class="field">
